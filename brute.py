@@ -2,7 +2,7 @@ import requests
 import argparse
 
 def brute_force(username, password, target_url, method):
-    data = {'uname': username, 'pass': password}
+    data = {'username': username, 'password': password}
     
     if method.lower() == 'get':
         response = requests.get(target_url, params=data)
